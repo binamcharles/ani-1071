@@ -1,1 +1,10 @@
+with workspace("Ani1071"):
+    configurations(["Debug", "Release"])
 
+    with project("Ani1071"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location(".")
+        files(["src/vec2.cpp", "src/main.cpp"])
+        includedirs(["include"])
